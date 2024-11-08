@@ -1,0 +1,46 @@
+
+.navbar{
+    height:70px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+}
+
+.left-btn-nav:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+
+}
+
+.logo{
+    margin-right:20px;
+    border-radius: 20px;
+}
+
+.logo img{
+    width:40px;
+}
+
+
+.btn-nav {
+    background-color: white;     
+    color: rgb(121, 116, 116);                 
+    padding: 8px 15px;            
+    border-radius: 5px;           
+    margin-left: 10px;            
+    border: 1px solid #6fbaf0;    
+    font-weight: bold;            
+    text-decoration: none;    
+    transition: background-color 0.3s;
+}
+
+.btn-nav:hover {
+    color: black;  
+    background-color: #32d37a;               
+}
+
+
+.last-menu {
+    list-style-type:none;
+    text-decoration: none;
+}

@@ -1,0 +1,161 @@
+.outer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top:3cm;
+    
+    
+    }
+
+    body{
+        background-image: url('https://www.talkwalker.com/hubfs/Website/Visuals/dl-images/case%20studies/2105-ecommerceindustry.webp');
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .main{
+        display: inline-flex;
+        box-shadow: 0 2px 10px 10px rgb(141, 138, 138);
+        height:600px;
+        border-radius: 30px;
+        /* background-color: antiquewhite; */
+    }
+
+    .logobox{
+        width: 400px;
+        height:600px;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        background-size:80% 80%;
+        border-radius: 20px;
+        
+        /* margin-right: 10px;
+        margin-left: 10px; */
+    }
+
+    .logobox h2{
+        padding:15px;
+        color:rgb(14, 15, 15);
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+    .login p{
+        font-weight: 800;
+        font-size: 30px;
+        color:black;
+    }
+
+    .login{
+        width:400px;
+        background: gold;
+        color: aliceblue;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        margin:20px;
+        margin-top:100px;
+        height:450px;
+    }
+
+    .login form label{
+        float:left;
+        margin:0px 0px 0px 40px;
+        color:black;
+        font-size:20px;
+    }
+    .login label{
+        font-size: 25px;
+    }
+    .login form input{
+        margin:10px;
+        height:40px;
+        color:black;
+        background-color: rgb(223, 207, 207);
+        outline:none;
+        border-radius: 15px;
+        padding:10px;
+    }
+
+    .login form input[type]::placeholder{
+        color:black;
+        opacity: .7s;
+        padding-left:3px;
+    }
+
+    form .btn:hover{
+        transition: .5s;
+        background-color: black;
+    }
+
+
+
+.loginbox {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.loginbox::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, blue, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: spin 3s linear infinite;
+}
+
+.loginbox::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -2;
+    border-radius: 10px;
+    background-image: conic-gradient(from var(--angle), transparent 70%, blue, red);
+    filter: blur(1.5rem);
+    opacity: 0.5;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
